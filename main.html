@@ -10,10 +10,11 @@
   </head>
   <body>
     <div class="player">
-      <video class="viewer" src="./assets/sample-clips/TOXIC.mp4"></video>
+      <!-- Updated src and class -->
+      <video class="player__video viewer" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
 
       <div class="player__controls">
-        <button class="player__button toggle">►</button>
+        <button class="player__button toggle" title="Toggle Play">►</button>
 
         <input
           type="range"
@@ -34,11 +35,11 @@
           class="player__slider"
         />
 
-        <button data-skip="-10">« 10s</button>
-        <button data-skip="25">25s »</button>
+        <button data-skip="-10" class="rewind">« 10s</button>
+        <button data-skip="25" class="forward">25s »</button>
 
         <div class="progress">
-          <div class="progress__filled"></div>
+          <div class="progress__filled" style="flex-basis: 0%;"></div>
         </div>
       </div>
     </div>
